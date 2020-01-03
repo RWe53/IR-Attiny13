@@ -31,6 +31,7 @@ int main(void)
     while (1) 
     {
 			if (IR_RAM[0] & (1<<1) && IR_RAM[4]==0x40)	PORTB		|= _BV(PB4); else PORTB &=~(1<<PB4);
+	    //IR_RAM[4] kode remote controler
     
     }
 }
