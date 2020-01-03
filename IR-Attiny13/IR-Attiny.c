@@ -17,9 +17,9 @@ int main(void)
 	OSCCAL =0x7F;										// CPU 2*9,6mHz
 	CLKPR=_BV(CLKPCE);
 	CLKPR=0;	
-	DDRB		= _BV(PB4) ;
-	PORTB		=  _BV(PB1) ;
-	TCCR0B	=  _BV(CS02) | _BV(CS00);
+	DDRB		= _BV(PB4) ;				//LED to test
+	PORTB		=  _BV(PB1) ;				// addisional pull up PB1
+	TCCR0B	=  _BV(CS02) | _BV(CS00);			//1024	
 	TCNT0=0;
 	OCR0B=1;
 	TIMSK0	=_BV(OCIE0B);
