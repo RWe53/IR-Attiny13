@@ -14,7 +14,7 @@ extern uint8_t IR_RAM[];
 
 int main(void)
 {
-	OSCCAL =0x7F;										// CPU 2*9,6mHz
+	OSCCAL =0x7F;						// CPU 2*9,6mHz in my Attiny13A 2*8,9mHz
 	CLKPR=_BV(CLKPCE);
 	CLKPR=0;	
 	DDRB		= _BV(PB4) ;				//LED to test
