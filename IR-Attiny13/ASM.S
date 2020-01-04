@@ -52,7 +52,7 @@ TIM0_COMPB_vect:
 						reti
 
 
-            .global INT0_vect
+            .global INT0_vect 
 INT0_vect:
 						sei
 						push  r0
