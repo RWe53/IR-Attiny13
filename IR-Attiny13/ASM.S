@@ -145,6 +145,6 @@ Not2:       clr		r16
             pop		r0                  
             out		0x3f,r0							
             pop		r0
-						reti
+						reti 
 
  
