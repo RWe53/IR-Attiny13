@@ -18,12 +18,12 @@ int main(void)
 	CLKPR=_BV(CLKPCE);
 	CLKPR=0;	
 	DDRB		= _BV(PB4) ;
-	PORTB		=  _BV(PB1) ;
-	TCCR0B	=  _BV(CS02) | _BV(CS00);
+	PORTB		= _BV(PB1) ;
+	TCCR0B	= _BV(CS02) | _BV(CS00);
 	TCNT0=0;
 	OCR0B=2;
-	TIMSK0	=_BV(OCIE0B);
-	GIMSK =  _BV(INT0);
+	TIMSK0	= _BV(OCIE0B);
+	GIMSK = _BV(INT0);
 	MCUCR = _BV(ISC01);
 	sei();
 	IR_RAM[0]=0;
